@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public abstract class BasePageLib extends BasePage {
 
     @FindBy(xpath = "//span[.='Dashboard']")
-    public WebElement dashboarLink;
+    public WebElement dashboarrLink;
 
     @FindBy(xpath = "//span[.='Users']")
     public WebElement userLink;

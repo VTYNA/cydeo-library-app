@@ -33,6 +33,11 @@ public class Driver {
             String browserType = ConfigurationReader.getProperty("browser");
 
             switch(browserType){
+                case "remote-chrome":
+                    try {
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
